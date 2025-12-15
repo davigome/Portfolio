@@ -1,79 +1,79 @@
 main{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Centraliza um container no centro da página.  */
+    width: 100vw; /* Deve ocupar 100% da largura da janela viewport */ 
+    height: 100vh; /* 100% da altura da janela. */
+    justify-content: center; /* Centraliza horizontalmente os elementos do main. */
+    align-items: center; /* Centraliza verticalmente os elementos. */
 }
 
 .container{
-    display: flex;
-    flex-direction: column;                                                   
-    background: rgb(255, 198,0);
-    width: 400px;
-    height: 600px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    display: flex; /* Novamente usamos o flexbox para centralizar e organizar os itens internos. */
+    flex-direction: column;  /* Organiza os itens em coluna. */                                                 
+    background: rgb(255, 198,0); /* Defone p fundo com uma cor amarela. */
+    width: 400px; /* Define um tamnho fixo. */
+    height: 600px; /* Define um tamnho fixo. */
+    align-items: center;/* Centraliza horizontalmente os elementos dentro do container. */
+    justify-content: space-evenly; /* Distribui os itens com espaço igauis entre eles. */
+    border-radius: 20px; /* Deixa as bordas arredondadas. */
+    box-shadow: 0 0 10px black; /* Cria uma sombra ao redor do container, para desracar visualmente. */
 }
 
 .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    font: bold 2.5rem serif;
-    border-bottom: solid 5px black;
-    margin-bottom: 20px;
+    display: flex; /* Usamos novamente para centralizar texto dentro dele. */
+    justify-content: center; /* Centralizam o conteúdo tanto verticalmente quanto horizontalmente. */
+    align-items: center; /* Esse atributo também centraliza tanto verticalmente quanto horizontalmente. */
+    width: 100%;  /* Define um tamnho fixo. */
+    height: 50px;  /* Define um tamnho fixo. */
+    font: bold 2.5rem serif;  /* Define a fonte: negrito, tamanho grande (2.5 rem), e fonte serifada. */
+    border-bottom: solid 5px black;  /* Linha grossa embaixo do título. */
+    margin-bottom: 20px;  /* Espaço entre o título e o próximo elemento. */
 }
 
-.input{
-    display: flex;
-    width: 300px;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
+.input{ /* Seletor .input, cada bloco que envolve um label + compo de input. */
+    display: flex;  /* Transforma esse bloco em flex, alinhando. */
+    width: 300px;  /* Tamanho definido para cada linha de entrada. */
+    height: 50px;  /* Tamanho definido para cada tipo de entrada. */
+    justify-content: space-between;  /* Coloca label e o campo de input em extremidades (esquerda/direita). */
+    align-items: center; /* Centraliza verticalmente dentro do bloco. */
 }
 
-.input input{
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    outline: 0;
-    font: bold 1.5rem serif;
-    text-align: center;
+.input input{ /* Seletor + Subseletor: todos os <input> dentro de .input. */
+    width: 200px; /* Define o tamanho dos campos. */
+    height: 50px; /* Define o tamnho dos campos. */
+    border-radius: 5px; /* Borda arredondada. */
+    border: none; /* Remove a borda padrão e contorno ( quando clicado). */
+    outline: 0; 
+    font: bold 1.5rem serif; /* Define o estilo do texto dentro do input. */
+    text-align: center; /* Texto digitado ficará centralizado no meio do campo. */
 }
 
-.input label {
-    font: bold 1.5rem serif;
+.input label{
+    font: bold 1.5rem serif; /* Único proposito: estilizar o texto do label (tamanho, peso e fonte). */
 }
 
 button{
-    width: 300px;
-    height: 40px;
-    background: #000;
-    color: rgb(255, 198, 0);
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 300px; /* Define o tamanho. */
+    height: 40px;  /* Define o tamanho dos campos. */
+    background: #000;  /* Cor de fundo (preto). */
+    color: rgb(255, 198, 0);  /* Cor da fonte amarela. */
+    outline: none;  /* Remove contorno de foco. */
+    border-radius: 5px;  /* Borda arredondada. */
+    cursor: pointer;  /* Muda o cursor para mâozinha quando passa o mause ( cursor: pointer indica interatividade). */
 }
 
 .result{
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
-    width: 300px;
-    height: 150px;
-    border-radius: 5px;
-    font: italic 1.5rem serif;
-    box-shadow: 0px 0px 10px black;
-    background: #000;
-    color: rgb(255, 198, 0);
-    padding: 20px;
-    box-sizing: border-box;
-    user-select: none;
+    display: flex;  /* Centraliza o texto do resultado verticalmente. */
+    margin-top: 20px;  /* Espaço acima, separando do botão. */
+    align-items: center;  /* Centraliza junto com o display: flex, o texto verticalmente. */
+    width: 300px;  /* Define o tamanho. */
+    height: 150px;  /* Define o tamanho. */
+    border-radius: 5px;  /* Borda arredondada. */
+    font: italic 1.5rem serif;  /* Fonte estilizado em italico e tamanho maior. */
+    box-shadow: 0px 0px 10px black;  /* Sombra ao redor, destacando o elemento. */
+    background: #000;  /* Preto de fundo. */
+    color: rgb(255, 198, 0);  /* Cor do texto em amarelo. */
+    padding: 20px;  /* Espaço interno de 20px. */
+    box-sizing: border-box;  /* Faz com que esse padding fique incluso nas medidas, mantendo o layout certinho. */
+    user-select: none;  /* Impede que o texto seja selecionável pelo usuário. É uma escolha de usabilidade. */
 }
 
